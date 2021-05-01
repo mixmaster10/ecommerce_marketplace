@@ -1,0 +1,51 @@
+/* Style the tab */
+._tab {
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.05);
+    // border-bottom: none;
+    background-color: #f1f1f1;
+}
+._tab-avatar-img {
+    @include avatar($width: 50px, $height: 50px);
+}
+._tab-post-input {
+    @include input;
+    padding: 0.55em 0;
+    width: 90%;
+    margin-left: 1em;
+}
+
+/* Style the buttons inside the tab */
+._tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+._tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+._tab button.active {
+    // background-color: #ccc;
+    background-color: white;
+}
+
+/* Style the tab content */
+._tab-content {
+    display: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 1em;
+    // border: 1px solid #ccc;
+    border-top: none;
+    background-color: white;
+}

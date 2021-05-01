@@ -1,0 +1,48 @@
+// Similar Stores Component as seen on /about
+.___similar-stores-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px lightgray solid;
+
+    & ul {
+        padding: 0;
+
+        & li {
+            margin-top: 1em;
+        }
+    }
+
+    & .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        margin: 0 0.5em;
+
+        & h5 {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 0.5em;
+            margin-bottom: 0;
+        }
+
+        & a {
+            color: $bluejestic-blue-color;
+        }
+    }
+
+    & img {
+        object-fit: cover;
+        width: 75px;
+        height: 75px;
+        margin-right: 1em;
+        border-radius: 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// Page Container
+#___about-page-container {
+    & * {
+        font-family: 'Poppins', sans-serif !important;
+    }
+
+    background-color: $groups-page-background-color;
+    display: grid;
+    // grid-template-columns:
+    //     minmax(150px, 200px) 300px repeat(8, minmax(50px, 1fr))
+    //     300px minmax(150px, 200px);
+    grid-template-columns: 200px 300px repeat(8, minmax(50px, 1fr)) 300px 200px;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1em;
+    padding: 1em 0;
+    font-family: 'Poppins', sans-serif;
+
+    // Sticky Sidebar Container
+    #___sticky-sidebar-container {
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        & .___sticky {
+            position: sticky;
+            top: 90px;
+        }
+    }
+
+    // Main Content Container
+    #___main-content-container {
+        width: 100%;
+        grid-column: 3 / 12;
+    }
+}

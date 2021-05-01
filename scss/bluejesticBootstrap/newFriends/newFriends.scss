@@ -1,0 +1,79 @@
+.friends-single-wrapper {
+    .friends-single-inner-wrapper {
+        background-color: #fff;
+        padding: 20px 20px 40px 20px;
+        border-radius: 10px;
+        text-align: center;
+        .friend-info {
+            .friend-avtar {
+                width:86px;
+                height:86px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                img {
+                    border-radius: 50px;
+                }
+            }
+            h5 {
+                font-size: 17px;
+                line-height:25px;
+                color: #000;
+                font-weight: 600;
+                margin: 0;
+            }
+            p {
+                font-size:15px;
+                line-height:22px;
+                color: #808191;
+                margin: 0;
+            }
+        }
+        .friend-details {
+            margin: 50px 0px;
+            display: flex;
+            justify-content:space-around;
+            text-align: center;
+            h5 {
+                color: #C4C4C4;
+                font-size: 17px;
+                line-height:25px;
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+            p {
+                color: #808191;
+                font-size: 17px;
+                line-height:25px;
+                margin: 0;
+            }
+        }
+        .friend-btn {
+            text-align: center;
+            padding:0px 20px;
+            .btn-friend {
+                background-color: #fff;
+                border: 1px solid #778BEC;
+                padding: 12px;
+                color: #778BEC;
+                font-size: 17px;
+                line-height: 25px;
+                font-weight: 600;
+                border-radius: 14px;
+                display:block;
+                transition: all ease-in-out 300ms;
+                &:hover {
+                    background-color: #778BEC;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.friends-suggested-wrapper {
+    .friends-single-wrapper {
+        .friends-single-inner-wrapper {
+            margin-right: 30px;
+        }
+    }
+}

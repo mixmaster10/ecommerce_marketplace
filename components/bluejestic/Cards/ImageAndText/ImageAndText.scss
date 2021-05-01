@@ -1,0 +1,14 @@
+.imageAndText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageAndText > img{
+ max-width: 300px;
+ border-radius: 7px;
+}
+.imageAndText > p{
+ margin: 1em;
+}

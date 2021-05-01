@@ -1,0 +1,373 @@
+._shipping {
+    background-color:#f1f1f1;
+   // font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif!important;
+    display: flex;
+    
+    figure{
+     margin:0;
+    }
+    
+     @include media('<md') {
+         padding: 75px 0;
+         .ps-section__header {
+             h1 {
+                 font-size: 36px;
+             }
+         }
+     }
+     @include media('<sm') {
+         padding: 60px 0;
+         .ps-section__header {
+             padding-bottom: 40px;
+ 
+             h1 {
+                 font-size: 30px;
+             }
+         }
+     }
+     @include media('<xs') {
+         padding: 50px 0;
+     }
+ }
+ ._container {
+     width:100%;
+     margin-left: auto;
+     margin-right: auto;
+     padding-right: 15px;
+     padding-left:15px;
+ }
+ ._shippingContent {
+     padding: 0;
+ }
+ ._checkoutinfo{
+    a {
+        text-align: left;
+        max-width: 100%!important;
+        color: $color-link;
+        font-size: 12px;
+    }
+
+ }
+ ._shippinginfo { 
+     figure {
+         margin-bottom: 0;
+         margin-top: 0;
+         margin-left: 60px;
+         a {
+             text-align: right;
+         }
+ 
+         strong {
+             text-align: right;
+         }
+         small
+         {
+             max-width: 100%!important;
+             font-size: 12px;
+             //width: 100%;
+         }
+       
+     }
+     ._ps-block__panel {
+         @include card;
+         padding: 2em 3em;
+         margin-bottom: 30px;
+         padding: 10px 20px;
+         border: 1px solid white;
+         border-radius: 7px;
+         font-family: 'Poppins', sans-serif;
+     }
+ 
+     @media screen and (min-width: 480px) {
+         .ps-block__footer {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+         }
+     }
+ 
+     @media screen and (min-width: 768px) {
+         figure {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+ 
+             > * {
+                 flex-basis: 100%;
+             }
+ 
+             small {
+                 font-size: 14px;
+                 max-width: 10em;
+             }
+ 
+             p {
+                 margin-bottom: 0;
+             }
+ 
+             a {
+                 align-self: flex-end;
+                 color: $color-link;
+                 max-width: 10em;
+                 text-align: right;
+             }
+         }
+     }
+ }
+ 
+ 
+ ._shippingsummary {
+     @include card;
+     font-family: 'Poppins', sans-serif;
+     padding-bottom: 2rem;
+     padding-top: 1rem;
+     width: 100%; // make sure the parent is full screen 
+     height: 100%; // so that the content will center correctly
+     figure {   
+         font-family: 'Poppins', sans-serif;
+         font-size:14px;
+         font-weight: 500;
+ 
+         figcaption {
+             display: flex;
+             justify-content: space-between;
+             font-weight: 400;
+             small {
+                 font-size: 14px;                
+             }
+         }
+         label
+         {
+              font-weight: 400;
+              //font-family: 'Poppins,Arial,Helvetica,sans-serif';
+         }
+     }
+ 
+ }
+ .ps-block__items {
+         a {
+             padding: 10px 0;
+             display: flex;
+             justify-content: space-between;
+             width: 100%;
+ 
+             strong {
+                 font-weight: 600;
+ 
+                 span {
+                     color: $color-text;
+                     margin-left: 10px;
+                 }
+             }
+ 
+             small {
+                 font-size: 14px;
+                 color: $color-heading;
+             }
+         }
+     }
+ 
+    
+     ._checkoutformcontent {
+         padding: 0 30px 0;
+ 
+         h5 {
+             margin: 0 0 25px;
+             font-size: 16px;
+             font-weight: 400;
+         }
+     }
+ 
+     ._form-group {  
+         border-radius: 7px;
+                > label {
+             font-size: 18px;
+             font-weight: 600;
+             
+         }       
+         a
+         {
+         text-align: left;
+         color:#556ee6;
+         }
+ 
+         input {
+             border-radius: 7px!important;
+              height:45px!important;           
+             @include placeholder() {
+                 color: #a9a9a9;
+             }
+         }
+       
+     }
+     ._btn
+     {
+        @include button;
+        padding:1rem !important;
+         display: flex;
+         color:white!important;
+         border: 1px solid #ccc;
+         text-align: center!important;
+         margin-left: 25px;
+         &:hover {
+             background-color: #556ee6;//$color-1st;
+             border-color: #556ee6//$color-1st;
+         }
+ 
+     }
+      ._h4style  
+      {
+ 
+         margin-top: "0.7em";
+         font-weight: "600";
+         font-size: "16px";
+     }
+     ._ps-tableshopping-cart {
+         thead {
+             tr {
+                 th {
+                     //padding: 15px 20px;
+                     padding:0;
+                     text-transform: uppercase;
+                     color: $color-heading;
+                     text-align: center;
+                     font-weight: 600;
+                     background-color: #f2f2f2;
+                     border: none;
+     
+                     &:first-child {
+                         text-align: left;
+                     }
+                 }
+             }
+         }
+     
+         tbody {
+             th
+             {
+                 padding:0;
+             }
+             tr {
+                 
+                 td {
+                     //padding: 5px 5px;
+                     vertical-align: middle;
+                     font-size: 16px;
+                     border:none;
+                     .form-group--number {
+                         max-width: 100px;
+                         display: inline-block;
+     
+                         input {
+                             border-radius: 0;
+                         }
+                     }
+     
+                     .ps-product--cart {
+                         max-width: 500px;
+                         font-size: 10px;
+                         
+                     }
+     
+                     &:last-child {
+                         text-align: right;
+     
+                         a {
+                             font-size: 20px;
+                         }
+                     }
+                 }
+             }
+         }
+     
+         @include media('<md') {
+             tbody {
+                 tr {
+                     td {
+                         min-width: 200px;
+     
+                         &:first-child {
+                             min-width: 400px;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     ._checkout-avatar {
+         @include avatar;
+     }
+ 
+ .col-sm-2--shopping
+ {
+     padding-bottom: 0.75rem;
+    
+ }
+ ._btncheckout
+ {
+    @include button;
+    padding:1rem !important;
+     display: flex;
+     color:white!important;
+     border: 1px solid #ccc;
+     text-align: center!important;
+     &:hover {
+         background-color: #556ee6;//$color-1st;
+         border-color: #556ee6//$color-1st;
+     }
+ 
+ }
+ ._col-sm-1--checkout
+ {
+    max-width: 0.3%!important;
+ }
+ .table-responsive--checkout
+ {
+     margin-left: 10px;
+ }
+ ._error {
+    color:red;
+    font-size: 12px;
+    display: relative;
+  }
+  ._form-control {
+    outline: none;
+    height: 50px;
+    font-size: 14px;
+    padding: 0 20px;
+    border: none;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    box-shadow: 0 0 rgba(#000, 0);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 0 #000;
+    @include placeholder() {
+        opacity: 1;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 #000;
+        border-color:$bluejestic-blue-color;//$color-1st;
+    }
+
+    &.ant-input {
+        height: 50px;
+        border-radius: 0;
+        border: 1px solid #dddddd;
+        &:focus {
+            border-color:$bluejestic-blue-color;//$color-1st;
+            outline: none;
+            box-shadow: 0 0 0 transparent;
+        }
+    }
+}
+._cardmmv{
+    height:40px;
+    width: 100px!important;
+    margin-top: 1em!important;
+    margin-left: 1em!important;
+}

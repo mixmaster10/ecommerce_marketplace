@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ${APP_NAME}
+  labels:
+    app: ${APP_LABEL}
+  annotations:
+    app.gitlab.com/app: ${CI_PROJECT_PATH_SLUG}
+    app.gitlab.com/env: ${CI_ENVIRONMENT_SLUG}
+spec:
+  selector:
+    matchLabels:
+      app: ${APP_LABEL}
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ${APP_LABEL}
+      annotations:
+        app.gitlab.com/app: ${CI_PROJECT_PATH_SLUG}
+        app.gitlab.com/env: ${CI_ENVIRONMENT_SLUG}
+    spec:
+      containers:
+      - name: nginx
+        stdin: true
+        tty: true
+        image: "${DOCKER_IMAGE}"
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: ${CI_PROJECT_NAME}-registry-auth
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ${SERVICE_NAME}
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+  selector:
+    app: ${APP_LABEL}

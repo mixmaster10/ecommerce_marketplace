@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "group": "Technology",
+        "members": 232000,
+        "banner": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+        "image_description": "unsplash image",
+        "tags": ["tech", "computers"],
+        "followers": [
+            "https://images.unsplash.com/photo-1605133104058-6fac9b38f522?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80",
+            "https://images.unsplash.com/photo-1595026530842-ccc7d3f71723?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80",
+            "https://images.unsplash.com/photo-1589221158826-aed6c80c3f15?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+        ]
+    },
+    {
+        "id": 2,
+        "group": "Fashion Designers",
+        "members": 60000,
+        "banner": "https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80",
+        "image_description": "unsplash image",
+        "tags": ["Suit", "Jeans", "Jackets"],
+        "followers": [
+            "https://images.unsplash.com/photo-1605133104058-6fac9b38f522?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80",
+            "https://images.unsplash.com/photo-1595026530842-ccc7d3f71723?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80",
+            "https://images.unsplash.com/photo-1589221158826-aed6c80c3f15?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+        ]
+    },
+    {
+        "id": 3,
+        "group": "Jewelry",
+        "members": 549666,
+        "banner": "https://images.unsplash.com/photo-1536502829567-baf877a670b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+        "image_description": "unsplash image",
+        "tags": ["Rings", "Necklace", "Watch"],
+        "followers": [
+            "https://images.unsplash.com/photo-1605133104058-6fac9b38f522?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80",
+            "https://images.unsplash.com/photo-1595026530842-ccc7d3f71723?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80",
+            "https://images.unsplash.com/photo-1589221158826-aed6c80c3f15?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+        ]
+    },
+    {
+        "id": 4,
+        "group": "Home Decor",
+        "members": 834256,
+        "banner": "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+        "image_description": "unsplash image",
+        "tags": ["Eloquent", "Home Improvement"],
+        "followers": [
+            "https://images.unsplash.com/photo-1605133104058-6fac9b38f522?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80",
+            "https://images.unsplash.com/photo-1595026530842-ccc7d3f71723?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80",
+            "https://images.unsplash.com/photo-1589221158826-aed6c80c3f15?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+        ]
+    }
+]

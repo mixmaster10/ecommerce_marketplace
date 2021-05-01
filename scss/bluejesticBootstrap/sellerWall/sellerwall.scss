@@ -1,0 +1,88 @@
+._seller-wall-center-columns {
+    grid-column: 3 / 11;
+}
+._seller-wall-right-columns {
+    grid-column: 11 / 12;
+ 
+}
+
+// Post Component
+._post-social-comment-input{
+    @include input;
+    padding: .5em;
+    margin: 1em;
+    width: 100%;
+    
+}
+._post-avatar-img {
+    @include avatar;
+}
+._post-social-comment-avatar{
+    @include avatar($width: 50px, $height:50px);
+}
+._post-social-comment-container {
+    padding: 2em;
+    display: flex;
+}
+._seller-wall-carousel-container {
+    padding: 2em;
+    margin: 1em 0;
+    @include card;
+}
+._seller-wall-carousel-img {
+    width: 15em;
+    height: 25em;
+    border-radius: 20px;
+    object-fit: cover;
+    padding: .5em;
+}
+._seller-card-aside-container {
+    @include card;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+._seller-card-aside-header {
+    display: flex;
+    justify-content: space-between;
+}
+._seller-card-aside-subTitle {
+    text-align: center;
+}
+._seller-card-aside-content {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+._seller-card-aside-more {
+    color: #556ee6 !important;
+    font-size: 2rem;
+}
+._seller-card-aside-content-container::before {
+    @include divider-line;
+}
+._seller-card-aside-content-img {
+    border-radius: 3px;
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+}
+._seller-card-aside-text-container {
+    // background-color: red;
+    padding: 0 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+._seller-card-aside-avatar-container{
+    margin-right: 1em;
+}
+// Related Groups
+// Contact
+._seller-card-aside-avatar {
+    @include avatar;
+}
+._seller-card-aside-followers {
+    color: #556ee6 !important;
+}

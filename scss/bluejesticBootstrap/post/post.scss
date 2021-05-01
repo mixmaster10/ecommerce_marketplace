@@ -1,0 +1,87 @@
+._post-container {
+    margin-bottom: 1em;
+    
+    @include card;
+}
+._post-header-container {
+    padding: 1em;
+    display: flex;
+}
+._post-header-text {
+   margin-left: 1em;
+}
+._post-hashtag-container {
+    display: flex;
+}
+._post-hashtag {
+    color: #556ee6 !important;
+    margin-right: 0.25em;
+}
+._post-img {
+    width: 100%;
+    height: auto;
+}
+._post-social-interaction-main{
+    display: flex;
+    
+}
+._post-social-iteraction-items {
+    margin: 0 1em;
+    display: flex;
+    align-items: center;
+  i {
+    margin-right: .25em;
+    &:hover {
+        cursor: pointer;
+    }
+  }
+  
+ 
+}
+
+._post-social-interaction-container {
+    
+    justify-content: space-between;
+    display: flex
+}
+._post-social-interaction-contact-avatar {
+    @include avatar($width: 3em, $height: 3em);
+}
+._tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  ._tooltip ._tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  ._tooltip ._tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  ._tooltip:hover ._tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }

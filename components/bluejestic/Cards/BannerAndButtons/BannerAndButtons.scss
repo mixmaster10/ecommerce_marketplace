@@ -1,0 +1,56 @@
+._bannerAndButtons {
+    max-width: 300px;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75) !important;
+    // -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+}
+._bannerAndButtons > img {
+    border-radius: 7px 7px 0 0;
+}
+._bannerAndButtons__main {
+    padding: 1em;
+    background-color: white;
+    border-radius: 0 0 7px 7px;
+}
+._bannerAndButtons__main > h4 {
+    font-weight: bold;
+}
+._bannerAndButtons__buttons {
+    // border: 1px solid green;
+    display: flex;
+}
+._bannerAndButtons__buttons > button:first-child {
+    @include button;
+    border: none;
+    margin: 0 5px 0 0;
+    flex: 0.5;
+}
+._bannerAndButtons__buttons > button:nth-child(2) {
+    @include button($background-color: #f2f2f2, $color: black);
+    border: none;
+    flex: 0.5;
+    margin: 0 0 0 5px;
+}
+._bannerAndButtons__avatar {
+    @include avatar($width: 30px, $height: 30px);
+    border: 2.5px solid white;
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+}
+._bannerAndButtons__avatar:not(:first-child){
+    margin-left: -1em;
+}
+._bannerAndButtons__avatar:hover {
+    margin-right: 5px;
+}
+._bannerAndButtons__secondary {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 1em;
+}
+._bannerAndButtons__secondary > p {
+    margin: 0;
+}
+._bannerAndButtons__avatars {
+    display: flex;
+}

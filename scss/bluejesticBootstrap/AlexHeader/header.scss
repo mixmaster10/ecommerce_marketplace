@@ -1,0 +1,61 @@
+._header-container {
+    @include gridLayout($grid-template-rows: 75px);
+    background-color: $bluejestic-blue-color;
+    // grid-template-rows: 1fr 12px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    
+}
+._header-menu-logo-container {
+    display: flex;
+    align-items: center;
+    // border: 1px solid yellow;
+    grid-column: 2 / 3;
+    .header--1 {
+        margin-right: 3.5em;
+    }
+}
+._header-hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;  
+}
+._header-search-bar {
+    // border: 1px solid pink;
+    grid-column: 3 / 9;
+}
+
+._header-actions-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid red;
+}
+._header-actions {
+    grid-column: 9 / 12;
+}
+._header-action-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+._header-action-text {
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+._header-blm-banner-container{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    align-self: end;
+}
+._header-icon {
+    font-size: 2em;
+}

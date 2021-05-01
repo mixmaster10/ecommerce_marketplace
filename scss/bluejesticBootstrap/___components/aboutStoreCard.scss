@@ -1,0 +1,34 @@
+// About store card as seen on /about
+.___about-store-card {
+    background-color: white;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+
+    .inner {
+        display: flex;
+        align-items: flex-end;
+
+        & img {
+            width: 5rem;
+        }
+    }
+
+    & h5 {
+        margin: 0 1rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    & > div {
+        display: flex;
+        width: 100%;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #ddd;
+    }
+
+    & p {
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,421 @@
+@import '../mixins';
+
+/*
+Layout
+===============================================================
+*/
+
+* {
+    box-sizing: border-box;
+}
+._page-container {
+    margin-top: 1em;
+    @include gridLayout($grid-gap: 1em);
+       .___logged-in-card {
+        background-color: white;
+        border-radius: 10px;
+        border: lightgray solid 1px;
+        padding-bottom: 1em;
+    }
+}
+._aside-container {
+    grid-column: 2 / 3;
+}
+// ._main-container {
+//     grid-column: 3 / 12;
+// }
+/*
+Vendor Card Section
+===============================================================
+*/
+._vendor-card-data-container {
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+}
+._vendor-card-svg-img {
+    width: 2.5em;
+}
+._vendor-card-data-number {
+    margin-left: auto;
+    @include link;
+}
+._vendor-card-data-number:hover {
+    cursor: pointer;
+}
+
+._vendor-card-container {
+    @include card;
+    margin-bottom: 1em;
+}
+._vendor-card-data-rating-text {
+    margin: 0;
+}
+._vendor-card-data-line {
+    @include divider-line;
+    margin: 1em 0;
+}
+._vendor-card-data-text {
+    margin: 0 1em;
+   
+}
+._vendor-card-data-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+._vendor-card-data-item {
+    
+    align-items: center;
+    display: flex;
+}
+._vendor-card-banner-img {
+    @include card-banner-image;
+}
+._vendor-card-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 30px;
+}
+._vendor-content-links {
+    display: flex;
+    justify-content: space-evenly
+}
+
+._vendor-content-link {
+    background-color: rgb(242, 242, 242);
+    padding: .15em .45em;
+    border-radius: 7px;
+}
+
+._vendor-card-avatar {
+    @include avatar;
+}
+._vendor-content-main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+._vendor-card-followers-container::before {
+    @include divider-line;
+    margin-bottom: 1em;
+}
+._vendor-card-followers-container::after {
+    @include divider-line;
+    margin: 1em 0;
+}
+._vendor-card-followers-avatar {
+    @include avatar($width: 65px, $height: 65px);
+}
+._vendor-card-btn {
+    @include button($padding: 0.75em 4.35em);
+    align-self: center;
+  
+}
+._vendor-card-btn:hover,
+._vendor-card-btn:hover {
+    background-color: $bluejestic-orange-color;
+}
+/*
+Activity Card section
+===============================================================
+*/
+._activity-card-container {
+    padding: 1em;
+    @include card;
+}
+._aside-sticky-container {
+    // position: sticky;
+    // top: 0;
+}
+._activity-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+._activity-card-more {
+    @include link;
+    font-size: 16px;
+    color: rgb(85, 110, 230);
+    padding-top: 0.2em;
+}
+._activity-card-divider::after {
+    margin: 1em 0;
+    @include divider-line;
+}
+
+._activity-card-main {
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+}
+._activity-card-description {
+    margin: 0 1em;
+}
+._activity-card-title {
+  
+    font-size: 18px;
+    color: #000000;
+    padding: 0.5em;
+    margin: 0 0.5em;
+}
+._activity-card-avatar {
+    @include avatar;
+}
+
+/*
+Group Section
+===============================================================
+*/
+._groups-container {
+    display: flex;
+}
+._group-page-layout{
+    grid-column: 2/3
+}
+._all-groups-content-container {
+    @include card;
+    padding: 2em 3em;
+}
+._all-groups-divider {
+    @include divider-line;
+    margin: 2em 0;
+}
+._all-groups-slider {
+    width: 100%;
+    max-width: 1200px;
+    // grid-template-columns: 2 -1;
+    margin: 0 auto;
+}
+._all-groups-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+._all-groups-btn {
+    @include button(
+        $background-color: $groups-page-background-color,
+        $color: black
+    );
+}
+._all-groups-btn:hover,
+._all-groups-btn:focus {
+    @include button($background-color: #d8ddf2, $color: #556ee6);
+}
+
+// Cards
+// ---------------------------------------------
+.checked {
+    color: orange;
+  }
+._group-card-container {
+    max-width: 350px;
+    @include card;
+    margin: 1em;
+}
+._group-card-title {
+    margin: 0;
+}
+._group-card-banner-img {
+    width: 100%;
+    border-radius: 3px;
+}
+._group-card-catagory-container {
+    display: flex;
+    justify-content: center;
+}
+._group-card-catagory {
+    margin: 0;
+    padding: 1em;
+}
+._group-card-content {
+    padding: 1em;
+}
+._group-card-member-avatar {
+    @include avatar($width: 30px, $height: 30px);
+}
+._group-card-member-info {
+    display: flex;
+    align-items: center;
+}
+._group-card-member-description {
+    margin: 0 0 0 0.35em;
+}
+._group-card-btn-container {
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+._group-card-btn {
+    @include button;
+}
+._group-card-thumbnail-container {
+    display: flex;
+    align-items: center;
+}
+._groups-card-thumbnail-heading {
+    margin: 0 1em;
+}
+._group-card-thumbnail {
+    @include card-banner-image($width: 40px, $height: 40px);
+}
+._group-card-tags {
+    margin-left: 0.25em;
+}
+._btn-secondary {
+    background-color: $groups-page-background-color;
+    color: black !important;
+}
+//
+._catagories-card-image {
+    width: 300px;
+}
+// SearchBar component
+// ===============================================================
+._search-bar-container {
+    @include card;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+._search-bar-form {
+    display: flex;
+    justify-content: flex-start;
+}
+._search-icon {
+    position: absolute;
+    padding: 17px 0 5px 10px;
+}
+
+._search-bar-input {
+    @include card;
+
+    padding: 1em;
+    border: none;
+    background-color: $groups-page-background-color;
+    width: 100%;
+}
+._search-bar-btn-container {
+    flex: 1;
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+._search-bar-btn {
+    @include link;
+    font-size: 2rem;
+}
+// Catagories
+// ===============================================================
+._catagories-title {
+    margin: 0;
+}
+._catagories-subHeading-container {
+    display: flex;
+    justify-content: space-between;
+}
+._catagories-card-container {
+    @include card;
+    padding: 1em;
+    display: flex;
+}
+._catagories-more-info {
+    @include link;
+}
+._catagories-container {
+    margin: 1em 0;
+}
+// My Groups
+// ===============================================================
+._my-groups-content {
+    @include card;
+    padding: 1em;
+}
+._my-groups-tabs {
+    display: flex;
+    justify-content: space-around;
+}
+._my-groups-tab {
+    border-bottom: 1px solid transparentize($bluejestic-blue-color, 1);
+    transition: border-bottom 0.5s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+        border-bottom: 1px solid opacify($bluejestic-blue-color, 0.5);
+    }
+}
+// ._my-groups-tabContent::before {
+//     @include divider-line;
+//     margin: 1em 0;
+// }
+._my-groups-tabContent{
+   display: flex;
+   flex-wrap: wrap;
+   border: 1px solid rgba(84, 84, 84, 0.2);
+   border-radius: 7px;
+   padding: 1em;
+   margin: 1em;
+}
+
+// Groups Card
+// ===============================================================
+._groups-card-container {
+    display: flex;
+    justify-content: space-between;
+    @include card;
+    padding: .75em 1em;
+    margin: 1em;
+  
+    border: 1px solid rgba(0, 0, 0, 0.3)
+}
+._groups-card-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 1em;
+}._groups-card-subtitle-container {
+    display: flex;
+    
+}
+._groups-card-banner-img {
+    max-width: 175px;
+    object-fit: cover;
+    border-radius: 7px;
+   
+}
+._gropus-card-title {
+    margin: 0;
+}
+._groups-card-subtitle {
+   margin: 0 1px;
+}
+._groups-card-secondary-container {
+    p {
+        margin: 0 15px 0 0;
+    }
+ 
+    
+}
+._groups-card-secondary-subtitle {
+    margin-right: 0 5px 0 0;
+}
+._groups-card-follower-avatar-container{
+    
+    img:not(:first-child){
+        margin-left: -5px;
+    }
+}
+._groups-card-followers-container {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+._groups-card-follower-avatar{
+    @include avatar($width: 20px,
+    $height: 20px,);
+   
+}

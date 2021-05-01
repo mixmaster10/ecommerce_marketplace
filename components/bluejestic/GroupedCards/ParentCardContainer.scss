@@ -1,0 +1,41 @@
+._groupedCards {
+    @include card;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+._groupedCards__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+._groupedCards__top > h3,
+._groupedCards__subtitle {
+    margin: 0;
+}
+
+._groupedCards__divider {
+    @include divider-line;
+}
+
+._groupedCards__children {
+    margin-top: 1.5em;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    padding: 2em;
+}
+
+._groupedCards__options {
+    display: flex;
+    margin: 1em 0;
+}
+._groupedCards__option {
+    margin-right: 1em;
+    transition: 300ms;
+}
+._groupedCards__option:hover {
+    transition: 300ms;
+    cursor: pointer;
+
+    border-bottom: 4px solid #556ee6;
+}

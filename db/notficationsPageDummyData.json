@@ -1,0 +1,130 @@
+{
+    "notifications": [
+        {
+            "friend": "Barclay Mullins",
+            "friendLink": "",
+            "text": "and 2 others commented on your post",
+            "timeStamp": "30m ago",
+            "image": null,
+            "unread": true,
+            "avatars": [
+                {
+                    "name": "SoorajSethumadhavan",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Jorgen Evens",
+                    "src": "https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1401&q=80"
+                },
+                {
+                    "name": "Jorgen Evens",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                }
+            ]
+        },
+        {
+            "friend": "Monique, Barclay",
+            "friendLink": "",
+            "text": "and 10 others liked your video",
+            "timeStamp": "10:45 AM",
+            "image": "https://images.unsplash.com/photo-1615903040547-b60983f7baec?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "unread": false,
+            "avatars": [
+                {
+                    "name": "Monique Evans",
+                    "src": "https://images.unsplash.com/photo-1535997018565-142937b9e38d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
+                },
+                {
+                    "name": "Barclay Mullins",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Wim Mostmans",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Wim Mostmans",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Wim Mostmans",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Wim Mostmans",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Wim Mostmans",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Wim Mostmans",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Wim Mostmans",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Wim Mostmans",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Wim Mostmans",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                },
+                {
+                    "name": "Wim Mostmans",
+                    "src": "https://images.unsplash.com/photo-1591244997331-a8479d869f9a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                }
+            ]
+        },
+        {
+            "friend": null,
+            "friendLink": null,
+            "text": "2 stores you follow posted new products",
+            "timeStamp": "Yesterday 2:11 PM",
+            "image": null,
+            "unread": false,
+            "avatars": [
+                {
+                    "name": "Shoes Warehouse",
+                    "src": "https://images.unsplash.com/photo-1596702874230-b5706dfb5bc7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80"
+                },
+                {
+                    "name": "Forever 21",
+                    "src": "https://images.unsplash.com/photo-1551734413-5943d61e002a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                }
+            ]
+        },
+        {
+            "friend": "Amanda",
+            "friendLink": "",
+            "text": "shared products with you",
+            "timeStamp": "Yesterday 1:32 PM",
+            "image": "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "unread": false,
+            "avatars": [
+                {
+                    "name": "Amanda Rich",
+                    "src": "https://images.unsplash.com/photo-1587628604439-3b9a0aa7a163?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+                }
+            ]
+        },
+        {
+            "friend": "James",
+            "friendLink": "",
+            "text": "sent you a friend request",
+            "timeStamp": "Yesterday 12:02 PM",
+            "image": null,
+            "unread": false,
+            "avatars": [
+                {
+                    "name": "James Bennett",
+                    "src": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+                }
+            ]
+        }
+    ]
+}

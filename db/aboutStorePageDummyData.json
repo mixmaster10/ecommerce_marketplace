@@ -1,0 +1,188 @@
+{
+    "sellers": [
+        {
+            "id": 1,
+            "info": {
+                "location": {
+                    "city": "Orlando",
+                    "state": "Florida",
+                    "postalCode": "32801"
+                }
+            },
+            "data": {
+                "name": "Tavroska",
+                "about": "Welcome! Please take a look around My shop is new and just getting started. I love scalloped edged quilts and custom quilting. Quilting is such a beautiful form of art, you literally can wrap yourself up in it. If you need something that you dont't see in my listing, please contact me. Oh yeah, and one more thing Jenny is my golden retriever. She just turned 8, she's usually hanging out with me while I'm working. She's the best:)",
+                "websites": ["www.tavroska.com", "www.instagram.com/tavroska"],
+                "avatar": "/static/img/tavrovska-logo.jpg",
+                "headerImage": "/static/img/product/banner-bg01.jpg"
+            },
+            "meta": {
+                "followers": 20000,
+                "products": 152,
+                "listings": 50,
+                "posts": 14,
+                "sales": 234,
+                "joined": 2020,
+                "chartImage": "https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/img/pie-sample.png",
+                "rating": 4
+            },
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Red Purse",
+                    "image": "https://images.unsplash.com/photo-1587467541972-f1522d7b7449?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+                    "price": 59.99
+                },
+                {
+                    "id": 2,
+                    "name": "Red Dress",
+                    "image": "https://images.unsplash.com/photo-1508742345712-0656a285ac27?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+                    "price": 129.99
+                },
+                {
+                    "id": 3,
+                    "name": "Watch",
+                    "image": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+                    "price": 59.99
+                },
+                {
+                    "id": 4,
+                    "name": "Jeans",
+                    "image": "https://images.unsplash.com/photo-1520512327543-38fe6e00e298?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+                    "price": 69.99
+                },
+                {
+                    "id": 5,
+                    "name": "Black Sweater",
+                    "image": "https://images.unsplash.com/photo-1576558345433-58e777a5e423?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+                    "price": 59.99
+                }
+            ],
+            "posts": [
+                {
+                    "id": 1,
+                    "body": "This is my first post",
+                    "image": "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+                    "likes": 5,
+                    "comments": []
+                },
+                {
+                    "id": 2,
+                    "body": "This is my second post",
+                    "image": "https://images.unsplash.com/photo-1554342872-034a06541bad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+                    "likes": 5,
+                    "comments": []
+                },
+                {
+                    "id": 3,
+                    "body": "This is my latest post",
+                    "image": "https://images.unsplash.com/photo-1544511196-1646449a253b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+                    "likes": 5,
+                    "comments": []
+                }
+            ],
+            "videos": [
+                {
+                    "id": 1,
+                    "body": "Video Description",
+                    "video": "",
+                    "thumbnail": "https://images.unsplash.com/photo-1495704907664-81f74a7efd9b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+                    "likes": 5,
+                    "comments": []
+                },
+                {
+                    "id": 2,
+                    "body": "Video Description",
+                    "video": "",
+                    "thumbnail": "https://images.unsplash.com/photo-1472746729193-36ad213ac4a5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+                    "likes": 5,
+                    "comments": []
+                },
+                {
+                    "id": 3,
+                    "body": "Video Description",
+                    "video": "",
+                    "thumbnail": "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80",
+                    "likes": 5,
+                    "comments": []
+                },
+                {
+                    "id": 4,
+                    "body": "Video Description",
+                    "video": "",
+                    "thumbnail": "https://images.unsplash.com/photo-1521510186458-bbbda7aef46b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80",
+                    "likes": 5,
+                    "comments": []
+                },
+                {
+                    "id": 5,
+                    "body": "Video Description",
+                    "video": "",
+                    "thumbnail": "https://images.unsplash.com/photo-1521510186458-bbbda7aef46b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80",
+                    "likes": 5,
+                    "comments": []
+                },
+                {
+                    "id": 6,
+                    "body": "Video Description",
+                    "video": "",
+                    "thumbnail": "https://images.unsplash.com/photo-1521510186458-bbbda7aef46b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80",
+                    "likes": 5,
+                    "comments": []
+                }
+            ],
+            "events": [
+                {
+                    "id": 1,
+                    "title": "Event Title",
+                    "description": "Join us for a free COVID-19 Business webinar",
+                    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                },
+                {
+                    "id": 2,
+                    "title": "Event Title",
+                    "description": "Event Description",
+                    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                },
+                {
+                    "id": 3,
+                    "title": "Event Title",
+                    "description": "Event Description",
+                    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                },
+                {
+                    "id": 4,
+                    "title": "Event Title",
+                    "description": "Event Description",
+                    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                }
+            ],
+            "similarStores": [
+                {
+                    "id": 1,
+                    "name": "Makeup Boutique",
+                    "followers": 2500,
+                    "avatar": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&q=80"
+                },
+                {
+                    "id": 2,
+                    "name": "Shoes Warehouse",
+                    "followers": 15000,
+                    "avatar": "https://images.unsplash.com/photo-1596702874230-b5706dfb5bc7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80"
+                },
+                {
+                    "id": 3,
+                    "name": "Coach",
+                    "followers": 57000,
+                    "avatar": "https://images.unsplash.com/photo-1546241183-0ed3f8a4a824?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                },
+                {
+                    "id": 4,
+                    "name": "Forever 21",
+                    "followers": 200000,
+                    "avatar": "https://images.unsplash.com/photo-1551734413-5943d61e002a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                }
+            ]
+        }
+    ]
+}

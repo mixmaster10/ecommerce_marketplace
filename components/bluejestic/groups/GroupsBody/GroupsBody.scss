@@ -1,0 +1,11 @@
+._groupsBody__container {
+    grid-column: 3 / 12;
+}
+._groupsBody__groupsCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+._groupsBody__groupsCard > ._groups-card-container {
+    flex: 1;
+}

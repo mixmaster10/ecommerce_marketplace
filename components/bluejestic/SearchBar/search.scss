@@ -1,0 +1,21 @@
+._search {
+ background-color: white;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+ flex: 1;
+}
+
+._search__container {
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+
+._searchBar__input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+  margin-left: 5px;
+  width: 90%;
+}

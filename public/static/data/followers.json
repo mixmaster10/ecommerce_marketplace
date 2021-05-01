@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "follower_image": "/static/img/bluejestic/faces/face1.jpeg"
+    },
+    {
+        "id": 2,
+        "follower_image": "/static/img/bluejestic/faces/face2.jpeg"
+    },
+    {
+        "id": 3,
+        "follower_image": "/static/img/bluejestic/faces/face3.jpeg"
+    },
+    {
+        "id": 4,
+        "follower_image": "/static/img/bluejestic/faces/face4.jpeg"
+    }
+]

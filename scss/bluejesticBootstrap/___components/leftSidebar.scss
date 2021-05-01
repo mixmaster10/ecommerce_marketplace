@@ -1,0 +1,81 @@
+.stores-left-sidebar {
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+
+    .left-sidebar-cover-photo {
+        height: 121px;
+        background-image: url('https://images.unsplash.com/photo-1622557850710-d08a111d3476?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px 10px 0px 0px;
+        position: relative;
+        .left-sidebar-profile-photo {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            bottom: -50px;
+            img {
+                border-radius:50px;
+                border:3px solid #fff;
+            }
+        }
+    }
+    .left-sidebar-navigation-wrapper {
+        margin-top: 75px;
+        padding: 0 17px;
+        ul {
+            padding: 0;
+            list-style-type: none;
+            li {
+                padding: 10px 30px;
+                cursor: pointer;
+                border-radius: 12px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    span.nav-icon {
+                        width: 30px;
+                        height: 30px;
+                        background-color: #E9EEFC;
+                        border-radius: 50px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 30px;
+                        margin-right: 30px;
+                        img {
+                            width: 18px;
+                        }
+                    }
+                    .nav-text {
+                        color: #847F7F;
+                        font-size: 16px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                &:hover {
+                    background-color: #556EE6;
+                    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+                    
+                    .nav-text {
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+    .left-sidebar-recent-post {
+        .__card {
+            border: 0;
+        }
+        .__landing-title {
+            border:0;
+        }
+    }
+}

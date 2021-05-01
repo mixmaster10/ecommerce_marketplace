@@ -1,0 +1,53 @@
+.___notification-item {
+    background-color: $groups-page-background-color;
+    height: 6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0.5em 0;
+
+    a {
+        color: #556ee6;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main-div {
+        display: flex;
+        align-items: center;
+
+        .stacked-avatar {
+            margin-right: 2em;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+
+    .div {
+        width: 50px;
+    }
+
+    .timestamp-div {
+        display: flex;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .arrow {
+        margin-left: 0.5em;
+    }
+}
+
+.___unread {
+    background-color: lavender;
+    border: 1px $bluejestic-blue-color solid;
+}

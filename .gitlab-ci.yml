@@ -1,0 +1,112 @@
+stages:
+ - build
+ - test
+ - deploy
+
+build-branch:
+  stage: build
+  script:
+    - docker build -t ${DOCKER_REGISTRY}/${CI_PROJECT_NAME}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHORT_SHA} .
+    - docker push ${DOCKER_REGISTRY}/${CI_PROJECT_NAME}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHORT_SHA}
+  only:
+    refs:
+      - branches
+  except:
+    refs:
+      - master
+
+build-master:
+  stage: build
+  script:
+    - docker build -t ${DOCKER_REGISTRY}/${CI_PROJECT_NAME}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHORT_SHA} .
+    - docker push ${DOCKER_REGISTRY}/${CI_PROJECT_NAME}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHORT_SHA}
+  only:
+    refs:
+      - master
+
+sonarqube-code-check:
+  stage: test
+  allow_failure: true
+  script:
+    - sonar-scanner -Dsonar.projectKey=${CI_PROJECT_NAME} -Dsonar.sources=. -Dsonar.host.url=${SONAR_URL} -Dsonar.login=${SONAR_LOGIN_TOKEN} -Dsonar.qualitygate.wait=true
+  only:
+    refs:
+      - master
+
+deploy-branch:
+  stage: deploy
+  environment:
+    name: review/${CI_COMMIT_REF_SLUG}
+    url: http://${CI_COMMIT_REF_SLUG}.${CI_PROJECT_NAME}.bluejestic.local
+    on_stop: stop-branch
+  variables:
+    APP_NAME: ${CI_ENVIRONMENT_SLUG} # CI_ENVIRONMENT_SLUG value is same as CI_COMMIT_REF_SLUG
+    APP_LABEL: ${CI_ENVIRONMENT_SLUG}
+    SERVICE_NAME: ${CI_ENVIRONMENT_SLUG}-svc
+    DEPLOY_HOST: ${CI_COMMIT_REF_SLUG}.${CI_PROJECT_NAME}.bluejestic.local
+    DOCKER_IMAGE: ${DOCKER_REGISTRY}/${CI_PROJECT_NAME}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHORT_SHA}
+  script:
+    - cat k8s.yaml | envsubst | kubectl apply -f -
+    - cat k8s-ingress-internal.yaml | envsubst | kubectl apply -f -
+  only:
+    refs:
+      - branches
+  except:
+    refs:
+      - master
+
+deploy-master:
+  stage: deploy
+  environment:
+    name: master
+    url: http://bluejestic.com
+    on_stop: stop-master
+  variables:
+    APP_NAME: ${CI_ENVIRONMENT_SLUG}
+    APP_LABEL: ${CI_ENVIRONMENT_SLUG}
+    SERVICE_NAME: ${CI_ENVIRONMENT_SLUG}-svc
+    DEPLOY_HOST: bluejestic.com
+    DOCKER_IMAGE: ${DOCKER_REGISTRY}/${CI_PROJECT_NAME}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHORT_SHA}
+  script:
+    - cat k8s.yaml | envsubst | kubectl apply -f -
+    - cat k8s-ingress-external.yaml | envsubst | kubectl apply -f -
+  only:
+    refs:
+      - master
+
+stop-branch:
+  stage: deploy
+  environment:
+    name: review/${CI_COMMIT_REF_SLUG}
+    action: stop
+  variables:
+    GIT_STRATEGY: none
+    APP_NAME: ${CI_ENVIRONMENT_SLUG}
+  script:
+    - kubectl delete deploy/${APP_NAME}
+    - kubectl delete svc/${APP_NAME}-svc
+    - kubectl delete ingress/${APP_NAME}
+  when: manual
+  only:
+    refs:
+      - branches
+  except:
+    refs:
+      - master
+
+stop-master:
+  stage: deploy
+  environment:
+    name: master
+    action: stop
+  variables:
+    GIT_STRATEGY: none
+    APP_NAME: ${CI_ENVIRONMENT_SLUG}
+  script:
+    - kubectl delete deploy/${APP_NAME}
+    - kubectl delete svc/${APP_NAME}-svc
+    - kubectl delete ingress/${APP_NAME}
+  when: manual
+  only:
+    refs:
+      - master

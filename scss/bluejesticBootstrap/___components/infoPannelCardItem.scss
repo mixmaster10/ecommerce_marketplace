@@ -1,0 +1,43 @@
+.___info-pannel-card-item {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+
+    @media screen and (max-width: 850px) {
+        border-bottom: 1px solid #ddd;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &:nth-child(odd) {
+        border-right: 1px solid #ddd;
+
+        @media screen and (max-width: 850px) {
+            border-right: none;
+        }
+    }
+
+    &:nth-last-child(n + 3) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    & p {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    & img {
+        object-fit: cover;
+        width: 10rem;
+        height: 10rem;
+        margin-right: 1em;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

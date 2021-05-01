@@ -1,0 +1,75 @@
+// Header component originally on /about
+.___about-seller-page-header {
+    width: 100%;
+    background-color: lightseagreen;
+    grid-column: 2 / 12;
+    background-color: white;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+
+    h4 {
+        position: absolute;
+        margin: 1rem 0 0 18rem;
+        font-weight: 500;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        padding: 1.5rem 0;
+    }
+
+    button {
+        margin: 0.5rem 0.5rem;
+        padding: 0.3rem 1.5rem;
+        float: right;
+        border-radius: 10px;
+        border: none;
+        background-color: #f4f3f3;
+
+        @media screen and (max-width: 700px) {
+            float: none;
+        }
+    }
+
+    .header-background {
+        position: relative;
+        width: 100%;
+
+        & .header-image {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        & .avatar {
+            position: absolute;
+            object-fit: cover;
+            left: 42px;
+            bottom: -58px;
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        & .text {
+            position: absolute;
+            top: 8px;
+            right: 32px;
+            display: flex;
+
+            & p {
+                color: #eee;
+                margin-right: 4rem;
+                font-size: larger;
+                font-weight: bold;
+            }
+        }
+    }
+}

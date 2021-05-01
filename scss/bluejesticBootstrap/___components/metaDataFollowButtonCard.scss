@@ -1,0 +1,77 @@
+// Card with followers, products, posts, sales, rating and follow button as seen on /about
+.___meta-data-follow-button-card {
+    background-color: white;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+
+    .inner {
+        padding: 10px;
+        border-radius: 5px;
+        border: lightgray 1px solid;
+    }
+
+    & ul {
+        padding-left: 0;
+    }
+
+    & ul > li {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        font-size: medium;
+        margin: 0.3em 0;
+
+        & img {
+            width: 3rem;
+        }
+
+        & div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 2rem;
+        }
+
+        & span {
+            color: $bluejestic-blue-color;
+            width: 1rem;
+            margin-right: 2.5rem;
+        }
+    }
+
+    .follow-rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin-top: 4rem;
+
+            & p {
+                margin: 0.5rem 0;
+                color: black;
+            }
+        }
+    }
+
+    .follow-button {
+        background-color: $bluejestic-blue-color;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        width: 70%;
+        margin-top: 1em;
+        padding: 7px 10px;
+        font-size: larger;
+        font-weight: bolder;
+    }
+}

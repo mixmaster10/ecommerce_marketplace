@@ -1,0 +1,45 @@
+// Data Carousel Component as seen on /about
+.___seller-data-carousel {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    padding: 1em 40px;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+
+    h5 {
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+        opacity: 50%;
+        color: black;
+    }
+
+    .slick-next:hover:before,
+    .slick-prev:hover:before {
+        opacity: 100%;
+    }
+
+    & > .title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 1em;
+
+        & a {
+            color: $bluejestic-blue-color;
+        }
+    }
+
+    & .slider {
+        width: 100%;
+        grid-template-columns: 2 -1;
+        margin: 0 auto;
+    }
+}

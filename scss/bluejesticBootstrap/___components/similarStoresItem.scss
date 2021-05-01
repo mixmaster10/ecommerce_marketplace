@@ -1,0 +1,30 @@
+.___similar-stores-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 14px;
+
+    & h5 {
+        margin: 0;
+        margin-left: 8px;
+        font-size: 16px;
+        font-weight: 500;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    & p {
+        color: $bluejestic-blue-color;
+        margin-left: 14px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

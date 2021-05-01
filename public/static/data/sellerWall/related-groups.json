@@ -1,0 +1,22 @@
+[
+    {
+        "text": "Women's Fashion",
+        "imgLink": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80",
+        "followers": "500000"
+    },
+    {
+        "text": "Men's Fashion",
+        "imgLink": "https://images.unsplash.com/photo-1505022610485-0249ba5b3675?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        "followers": "200000"
+    },
+    {
+        "text": "Women's Jewelry",
+        "imgLink": "https://images.unsplash.com/photo-1450297166380-cabe503887e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1345&q=80",
+        "followers": "200000"
+    },
+    {
+        "text": "Makeup",
+        "imgLink": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        "followers": "200000"
+    }
+]

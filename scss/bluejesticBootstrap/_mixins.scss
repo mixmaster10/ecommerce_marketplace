@@ -1,0 +1,122 @@
+@import './variables';
+
+/*
+Layout
+==========================================
+*/
+@mixin gridLayout(
+    // $grid-template-columns:  200px  minmax(250px,275px) repeat(8,100px) minmax(300px,300px) 200px,
+    // $grid-template-columns:  300px repeat(10, 1fr) 300px,
+    $grid-template-columns: 200px 300px repeat(8,minmax(90px, 1fr)) 300px 200px,
+    $grid-template-rows: repeat(3, auto) ,
+    $grid-gap: 1em,
+    $background-color: $groups-page-background-color,
+    // $padding: 1em,
+    $display: grid
+) {
+   
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+    grid-gap: $grid-gap;
+    background-color: $background-color;
+    // padding: $padding;
+    display: $display;
+}
+@mixin online-light {
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: $online-light;
+    height: 15px;
+    width: 15px;
+
+}
+@mixin offline-light {
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: $border-divider-color;
+    height: 15px;
+    width: 15px;
+
+}
+@mixin input($border-radius:5px, $background-color: $groups-page-background-color, $border: none) {
+    border-radius: $border-radius;
+    background-color: $background-color;
+    border: $border
+    
+}
+@mixin avatar(
+    $width: 75px,
+    $height: 75px,
+    $border-radius: 50%,
+    $object-fit: cover
+) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    object-fit: $object-fit;
+}
+
+@mixin card($background-color: white, $border-radius: 7px) {
+    background-color: $background-color;
+    border-radius: $border-radius;
+}
+
+@mixin aside-card($display: grid, $grid-template-rows: min-content, $grid-gap: 1em){
+    display: $display;
+    grid-template-rows: $grid-template-rows;
+    grid-gap: $grid-gap;
+}
+
+@mixin card-banner-image(
+    $width: 100%,
+    $border-radius: 3px,
+    $height: 150px,
+    $object-fit: cover,
+    $object-position: left top
+) {
+    width: $width;
+    border-radius: $border-radius;
+    height: $height;
+    object-fit: $object-fit;
+    object-position: $object-position;
+}
+@mixin divider-line(
+    $content: '',
+    $width: 100%,
+    $height: 1px,
+    $display: block,
+    $background-color: rgba(0, 0, 0, 0.3)
+) {
+    content: $content;
+    width: $width;
+    height: $height;
+    display: $display;
+    background-color: $background-color;
+}
+@mixin button(
+    $color: white,
+    $padding: 0.75em 2.35em,
+    $background-color: $bluejestic-blue-color,
+    $border-radius: 5px
+) {
+    color: $color !important;
+    padding: $padding;
+    background-color: $background-color;
+    border-radius: $border-radius;
+}
+@mixin shadow(
+    $box-shadow: 5px 5px 50px -24px rgba(0, 0, 0, 0.26),
+    $web-kit-box-shadow: 5px 5px 50px -24px rgba(0, 0, 0, 0.26)
+) {
+    -webkit-box-shadow: $web-kit-box-shadow;
+    box-shadow: $box-shadow;
+}
+@mixin link(
+    $color: $bluejestic-blue-color,
+    $hover-color: $bluejestic-orange-color
+) {
+    color: $color !important;
+    &:hover {
+        color: $hover-color !important;
+    }
+}

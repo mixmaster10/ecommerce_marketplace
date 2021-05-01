@@ -1,0 +1,33 @@
+[
+    {
+        "firstName": "Alex",
+        "lastName": "Dolgove",
+        "avatar": "https://images.unsplash.com/photo-1575767931074-a91868c89acb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        "isOnline": false
+    },
+    {
+        "firstName": "Denis",
+        "lastName": "Han",
+        "avatar": "https://images.unsplash.com/photo-1581466046946-06ea1cdcda9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        "isOnline": true
+    },
+    {
+        "firstName": "Erica",
+        "lastName": "Jones",
+        "avatar": "https://images.unsplash.com/photo-1595754883593-e274aaa13580?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1517&q=80",
+        "isOnline": true
+    },
+    {
+        "firstName": "Stella",
+        "lastName": "Johnson",
+        "avatar": "https://images.unsplash.com/photo-1548545097-75138afa675c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+
+        "isOnline": false
+    },
+    {
+        "firstName": "Jake",
+        "lastName": "Smith",
+        "avatar": "https://images.unsplash.com/photo-1553989577-14e950184619?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1371&q=80",
+        "isOnline": false
+    }
+]

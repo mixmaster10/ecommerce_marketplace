@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "store_name": "Jane's Store",
+        "followers": "20,000",
+        "email": "jane@monkiesarerad.com",
+        "banner_image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+        "avatar": "https://images.unsplash.com/photo-1565768028719-709cc89b4bba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
+    }
+]

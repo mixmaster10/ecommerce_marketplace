@@ -1,0 +1,154 @@
+// Store Information Component as seen on /about
+.___about-store-information-card {
+    background-color: white;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+
+    .inner {
+        display: flex;
+        align-items: flex-end;
+
+        & img {
+            width: 5rem;
+        }
+    }
+
+    & h5 {
+        margin: 0 1rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    & > div {
+        display: flex;
+        width: 100%;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .flex-info {
+        margin-top: 1em;
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 1px solid #ddd;
+
+        @media screen and (max-width: 540px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        & h4 {
+            color: $bluejestic-blue-color;
+        }
+    }
+
+    .info-column {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1em;
+        margin-bottom: 1em;
+        border-right: 1px solid #ddd;
+
+        @media screen and (max-width: 540px) {
+            border-right: none;
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+        & p {
+            margin: 0;
+        }
+    }
+
+    .overview {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1em;
+        padding-bottom: 1em;
+        flex-shrink: 0;
+
+        @media screen and (max-width: 350px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        & > div {
+            display: flex;
+        }
+
+        & h5 {
+            margin: 0 1rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        & span {
+            font-size: medium;
+            margin-right: 2rem;
+        }
+    }
+
+    .overview-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & img {
+            max-width: 20rem;
+        }
+
+        @media screen and (max-width: 540px) {
+            flex-direction: column;
+        }
+
+        & ul {
+            width: 100%;
+            margin-top: 2em;
+            margin-right: 1em;
+
+            & li:before {
+                content: '•';
+                padding-right: 8px;
+                font-weight: 900;
+                font-size: x-large;
+            }
+
+            & li:first-child:before {
+                color: royalblue;
+            }
+
+            & li:nth-child(2):before {
+                color: goldenrod;
+            }
+
+            & li:nth-child(3):before {
+                color: steelblue;
+            }
+
+            & li:nth-child(4):before {
+                color: chocolate;
+            }
+
+            & li:last-child:before {
+                color: mediumseagreen;
+            }
+        }
+
+        & ul > li {
+            list-style-type: none;
+            border-top: 1px solid #ddd;
+
+            &:last-child {
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    }
+}
