@@ -1,5 +1,4 @@
-## Bluejestic Marketplace
-###### Version 1.2.0
+## Ecommerce Marketplace
 ### Installation
 ```bash
 npm install
